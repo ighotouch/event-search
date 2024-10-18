@@ -38,7 +38,17 @@ This project is a simple Next.js application built with TypeScript, TailwindCSS,
 
 ### Detailed User View
 
-- **Objective**: Implement a user-friendly modal or separate page that displays detailed information about a user when their name is clicked in the user table.
+- **Objective**: Implement a user-friendly modal or separate page(🌟) that displays detailed information about a user when their name is clicked in the user table.
+
+### Additional Enhancements (Optional)
+
+🤔 **Think of What's Missing**:
+
+- **User Avatar**: Add an avatar image next to each user's name in the table to make the UI more visually appealing.
+- **Pagination**: Implement pagination for the user table to handle large datasets efficiently.
+- **Sorting**: Allow sorting of users by name or email by clicking on the table headers.
+
+These enhancements are not mandatory but can help you stand out and impress us! 🌟
 
 ### Bonus Objectives:
 
