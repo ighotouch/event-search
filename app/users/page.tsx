@@ -1,3 +1,3 @@
-import UsersPage from "@/src/pages/users/users-page";
+import UsersPage from "@/pages/users/users-page";
 
 export { UsersPage as default };

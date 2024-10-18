@@ -9,10 +9,10 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { useUserSearch } from "@/hooks/use-user-search";
+import { useUsers } from "@/services/use-users";
 
 export const UsersTable = () => {
-  const { users, loading, error } = useUserSearch();
+  const { users, loading, error } = useUsers();
 
   if (loading) {
     return <div>Loading...</div>;

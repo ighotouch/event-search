@@ -1,13 +1,7 @@
+import { User } from "@/schemas/user";
 import { useState, useEffect } from "react";
 
-interface User {
-  id: number;
-  name: string;
-  username: string;
-  email: string;
-}
-
-const useUserSearch = () => {
+const useUsers = () => {
   const [users, setUsers] = useState<User[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
@@ -36,4 +30,4 @@ const useUserSearch = () => {
   return { users, loading, error };
 };
 
-export { useUserSearch };
+export { useUsers };
