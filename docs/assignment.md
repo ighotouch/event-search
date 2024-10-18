@@ -34,6 +34,12 @@ This project is a simple Next.js application built with TypeScript, TailwindCSS,
    - Store the user data in the component state or context.
    - Update the state based on the search query and clear search actions.
 
+## Additional Tasks for the Assignment
+
+### Detailed User View
+
+- **Objective**: Implement a user-friendly modal or separate page that displays detailed information about a user when their name is clicked in the user table.
+
 ### Bonus Objectives:
 
 - **Styling**:
@@ -72,3 +78,9 @@ The project follows a standard Next.js file structure:
 ├── hooks           # Custom hooks
 └── Docs            # How we work at In2event
 ```
+
+### Explanation:
+
+- **Primary Objective**: The assignment focuses on implementing a search feature for filtering users and providing the ability to clear the search results.
+- **Bonus Objectives**: Includes optional tasks such as debouncing the search input, adding a loading indicator, and ensuring responsiveness using TailwindCSS.
+- **Review Criteria**: Outlines the key areas you will evaluate during the code review: code quality, completeness, responsiveness, state management, and performance.

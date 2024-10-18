@@ -1,6 +1,8 @@
 ## Getting Started
 
-First, clone the repository:
+1. Go to the repository on GitHub and click the "Fork" button.
+
+Then, clone your forked repository:
 
 ```bash
 git clone <https://github.com/In2Event/assignment-sam.git>
