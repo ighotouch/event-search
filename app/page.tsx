@@ -11,9 +11,9 @@ export default function Home() {
               app/page.tsx
             </code>
           </li>
-          <li>Find the assignment at docs/</li>
+          <li>Find the assignment in docs/</li>
           <li>
-            <Link href="/users"> Go to users page →</Link>
+            <Link href="/users"> Go to users page → [This is your base]</Link>
           </li>
         </ol>
       </main>
