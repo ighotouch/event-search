@@ -2,13 +2,7 @@
 
 ## Overview
 
-This project is a simple Next.js application built with TypeScript, TailwindCSS, and React. Your task is to implement a **search feature** for users and display the search results in a table. Additionally, you will need to provide an option to **clear the search results** and display all users again.
-
-## Tech Stack
-
-- **Framework**: Next.js (React)
-- **Language**: TypeScript
-- **Styling**: TailwindCSS
+This project is a simple Next.js application built with TypeScript, TailwindCSS, and React. Your task is to implement a **search feature** for users and display the search results in a table. Additionally, you will need to provide options to **clear the search results**, **view detailed user information**, and **add new users** through a modal form.
 
 ## Assignment Tasks
 
@@ -16,37 +10,45 @@ This project is a simple Next.js application built with TypeScript, TailwindCSS,
 
 1. **Search Input**:
 
-   - Add a search input field at the top of the user table.
-   - Allow the user to type in the search input to filter users by **name** or **email**.
-   - Implement debouncing (optional but recommended) to avoid triggering too many search requests as the user types.
+- Add a search input field at the top of the user table.
+- Allow the user to type in the search input to filter users by **name** or **email**.
+- Implement debouncing (optional but recommended) to avoid triggering too many search requests as the user types.
 
 2. **Displaying Search Results**:
 
-   - When the user enters a search query, update the table to display only the users that match the search term (by name or email).
-   - If no users match the search term, display a message such as "No users found."
+- When the user enters a search query, update the table to display only the users that match the search term (by name or email).
+- If no users match the search term, display a message such as "No users found."
 
 3. **Clear Search**:
 
-   - Add a "Clear Search" button or option near the search input field.
-   - When this button is clicked, clear the search input and restore the table to show all users.
+- Add a "Clear Search" button or option near the search input field.
+- When this button is clicked, clear the search input and restore the table to show all users.
 
 4. **State Management**:
-   - Store the user data in the component state or context.
-   - Update the state based on the search query and clear search actions.
 
-## Additional Tasks for the Assignment
+- Store the user data in the component state or context.
+- Update the state based on the search query and clear search actions.
 
-### Detailed User View
+### Additional Tasks for the Assignment
 
-- **Objective**: Implement a user-friendly modal or separate page(🌟) that displays detailed information about a user when their name is clicked in the user table.
+1. **Detailed User View**:
+
+- Implement a user-friendly modal or separate page that displays detailed information about a user when their name is clicked in the user table.
+
+2. **Adding New Users**:
+
+- Implement a modal form using React Hook Form to add new users to the table.
+- Ensure the form includes fields for the user's name, email, and any other relevant information.
+- Use Zod for form validation and display appropriate error messages for invalid inputs.
+- When the form is submitted, add the new user to the table and update the component state or context.
+- Provide an option to close the modal without submitting the form, and ensure the modal can be closed by clicking outside of it or by pressing the escape key.
 
 ### Additional Enhancements (Optional)
-
-🤔 **Think of What's Missing**:
 
 - **User Avatar**: Add an avatar image next to each user's name in the table to make the UI more visually appealing.
 - **Pagination**: Implement pagination for the user table to handle large datasets efficiently.
 - **Sorting**: Allow sorting of users by name or email by clicking on the table headers.
+- **React Query Setup**: If you're willing, please set up React Query for handling services.
 
 These enhancements are not mandatory but can help you stand out and impress us! 🌟
 
@@ -75,18 +77,20 @@ You can use static mock data or fetch the user list from an external API such as
 
 ## Project Structure
 
-The project follows a standard Next.js file structure:
+The project should follow the following structure.
 
 ```bash
 .
-├── components      # Reusable React components
 ├── app             # Next.js pages
-├── public          # Public assets (images, fonts, etc.)
-├── styles          # Tailwind CSS config and global styles
-├── types           # TypeScript interfaces and types
-├── utils           # Utility functions (if needed)
-├── hooks           # Custom hooks
-└── Docs            # How we work at In2event
+├── src             # Source files
+│   ├── public      # Public assets (images, fonts, etc.)
+│   ├── styles      # Tailwind CSS config and global styles
+│   ├── types       # TypeScript interfaces and types
+│   ├── schemas     # Zod schemas
+│   ├── lib         # Utility functions
+│   ├── hooks       # Custom hooks
+│   ├── services    # Services
+└── docs            # Documentation
 ```
 
 ### Explanation:

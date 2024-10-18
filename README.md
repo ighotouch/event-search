@@ -22,3 +22,13 @@ bun dev
 ```
 
 For more information on what to do, read `docs/assignment.md`.
+
+## Tech Stack (In2event)
+
+- **Framework**: Next.js (React)
+- **Language**: TypeScript
+- **Styling**: TailwindCSS
+- **Form Validation**: Zod
+- **Form Handling**: React Hook Form
+- **Table Management**: [TanStack Table](https://tanstack.com/table)
+- **Data Fetching**: [TanStack Query](https://tanstack.com/query)
